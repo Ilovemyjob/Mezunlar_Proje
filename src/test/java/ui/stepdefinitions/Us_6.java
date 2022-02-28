@@ -17,6 +17,7 @@ public class Us_6 {
     Us6 us6 = new Us6();
     Us4 us4 = new Us4();
 
+    public String selected;
 
     @When("clickt {string} product")
     public void clickt_product(int string) {
@@ -32,23 +33,25 @@ public class Us_6 {
 //            }
 //        }
     }
-    @And("clickt {int} product")
-    public void clicktProduct(int number) {
-//        List<String> products = new ArrayList<>();
-//        for (int i = 0; i < us6.product1.size(); i++) {
-//            products.add(us6.product1.toString());
-//
-//            if(products.get(i).equals(number)){
-//                us6.product1.get(number).click();
-//
-//            }
-//        }
-        System.out.println(us6.product1.toString());
 
-        us6.product1.get(number).click();
+    @When("clickt first product")
+    public void clickt_first_product() {
+//        for (int i = 0; i < us6.products.size(); i++) {
+//
+//            us6.products.get(i).getText();
+//            System.out.println(us6.products.get(i).getText());
+//
+//        }
+
+        selected = us6.products.get(7).getText();
+        us6.products.get(7).click();
 
     }
 
+    @When("clickt second product")
+    public void clickt_second_product() {
+        us6.products.get(12).click();
+    }
     @When("clickt Add to card")
     public void clickt_Add_to_card() {
 
@@ -59,7 +62,7 @@ public class Us_6 {
     @When("user delete search box")
     public void user_delete_search_box() throws InterruptedException {
         Thread.sleep(2000);
-       us4.searchButton.clear();
+      // us4.searchButton.clear();
 
        Thread.sleep(2000);
 
@@ -69,14 +72,25 @@ public class Us_6 {
     public void go_to_Shopping_list() throws InterruptedException {
         Thread.sleep(2000);
 
-        us6.shoppingList.click();
+        us6.cart.click();
 
     }
 
     @When("User should see selected product correctly")
     public void user_should_see_selected_product_correctly() {
 
-        Assert.assertTrue(us6.product1.contains(us6.selectedProducts));
+        String expected1 = "Samsung";
+        //String expected2 = "Apple";
+        for (int i = 0; i < us6.products.size(); i++) {
+
+           if(us6.products.get(i).getText().contains(expected1)){
+               Assert.assertTrue(true);
+
+           }
+        }
+     //   Assert.assertTrue(us6.products.get(1).getText().contains(expected1));
+        //Assert.assertTrue(us6.products.get(2).getText().contains(expected2));
+
     }
 
 

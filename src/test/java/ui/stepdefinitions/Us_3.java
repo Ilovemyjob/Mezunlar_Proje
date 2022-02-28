@@ -3,7 +3,6 @@ package ui.stepdefinitions;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
-import ui.pages.Main;
 import ui.pages.Us3;
 
 import java.util.ArrayList;

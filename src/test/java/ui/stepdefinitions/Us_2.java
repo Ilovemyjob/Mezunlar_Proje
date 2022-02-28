@@ -7,7 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import ui.pages.Login;
 import ui.pages.Us2;
 import ui.utilities.ConfigReader;
 import ui.utilities.Driver;
@@ -17,10 +16,11 @@ public class Us_2 {
 
     Us2 us2 =new Us2();
     @And("user hover over Sign in")
-    public void userHoverOverSignIn() {
+    public void userHoverOverSignIn() throws InterruptedException {
         Actions actions=new Actions(Driver.getDriver());
         WebElement hoverOverElement = us2.hoveroverSignin;
         actions.moveToElement(hoverOverElement).perform();
+        Thread.sleep(2000);
 
     }
     @And("clickt Sign In")

@@ -14,16 +14,18 @@ public class Us6 {
     }
 
     @FindBy(xpath = "(//a[@class='a-link-normal s-underline-text s-underline-link-text s-link-style a-text-normal'])[*]")
-    public List<WebElement> product1;
+    public List<WebElement> products;
 
-    @FindBy(id = "add-to-cart-button")
+    @FindBy(xpath = "//input[@id='add-to-cart-button']")
     public WebElement addCard;
 
     @FindBy(id = "a-truncate-cut")
     public List<WebElement> selectedProducts;
 
     @FindBy(id = "nav-cart-count-container")
-    public WebElement shoppingList;
+    public WebElement cart;
+
+
 
 
 

@@ -9,11 +9,10 @@ Feature:tc_6
     And write valid Password
     And User clickt search buttom
     And User write a Words "Samsung"
-    And clickt 1 product
+    And clickt first product
     And clickt Add to card
-    And user delete search box
-    And User write a Words "Samsung"
-    And clickt 2 product
+    And User write a Words "Apple"
+    And clickt second product
     And clickt Add to card
     And go to Shopping list
     And User should see selected product correctly

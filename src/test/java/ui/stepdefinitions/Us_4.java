@@ -26,8 +26,9 @@ public class Us_4 {
     }
 
     @When("User write a Words {string}")
-    public void user_write_a_Words(String string) {
+    public void user_write_a_Words(String string) throws InterruptedException {
         us4.search.sendKeys(string,Keys.ENTER);
+        Thread.sleep(2000);
 
     }
 
