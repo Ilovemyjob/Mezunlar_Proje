@@ -31,19 +31,13 @@ public class Us_3 {
 //        for (WebElement option:allOption){
 //            System.out.println(option.getText());
 //        }
-
-
-
           List<String> allOptions = new ArrayList<>();
 //        for(WebElement each:main.AllOptions){
 //            allOptions.add(each.getText());
 //            if (each.equals(option) ) {
-//
 //            }
 //        }
 //        System.out.println(allOptions);
-
-
         for (int i = 0; i < us3.AllOptions.size() ; i++) {
             if(us3.AllOptions.get(i).getText().equals(option)){
                 us3.AllOptions.get(i).click();
@@ -58,7 +52,6 @@ public class Us_3 {
 
         List<String> expected = new ArrayList<>();
         expected.addAll(Arrays.asList("MAIN MENU", "Electronics", "Accessories & Supplies", "Camera & Photo", "Car & Vehicle Electronics", "Cell Phones & Accessories", "Computers & Accessories", "GPS & Navigation", "Headphones","Home Audio", "Office Electronics", "Portable Audio & Video", "Security & Surveillance", "Service Plans", "Television & Video", "Video Game Consoles & Accessories", "Video Projectors", "Wearable Technology", "eBook Readers & Accessories"));
-
         System.out.println(expected);
         System.out.println("-------------");
 
@@ -67,6 +60,8 @@ public class Us_3 {
             actual.add(each.getText());
 
         }
+
+
         Assert.assertTrue(actual.containsAll(expected));
         System.out.println(actual);
 

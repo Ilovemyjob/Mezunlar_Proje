@@ -1,0 +1,84 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2022-03-12T19:39:29.571Z",
+        "line": 5,
+        "name": "User should reach to the Amazon web site",
+        "description": "",
+        "id": "us-1;user-should-reach-to-the-amazon-web-site",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20585000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User go to Amazon site",
+            "match": {
+              "location": "ui.stepdefinitions.Us_1.userGoToAmazonSite()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1926000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User can go to site",
+            "match": {
+              "location": "ui.stepdefinitions.Us_1.userCanGoToSite()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@1"
+          },
+          {
+            "name": "@Parallel1"
+          },
+          {
+            "name": "@Parallel2"
+          }
+        ]
+      }
+    ],
+    "name": "Us_1",
+    "description": "",
+    "id": "us-1",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/uiFeatures/Us_1.feature",
+    "tags": [
+      {
+        "name": "@1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 3,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

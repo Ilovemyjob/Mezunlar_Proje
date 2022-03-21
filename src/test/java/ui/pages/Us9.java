@@ -18,11 +18,20 @@ public class Us9 {
     @FindBy(id = "WLHUC_result_success")
     public WebElement successMessage;
 
+
+
     @FindBy(xpath = "//span[contains(text(),'View Your List')]")
     public WebElement viewList;
 
     @FindBy(xpath = "(//div[@class='a-section'])[4]")
     public WebElement addedProduct;
+
+    @FindBy(xpath = "//input[@name='submit.deleteItem']")
+    public WebElement delete;
+
+    @FindBy(xpath = "//div[contains(text(),'Deleted')]")
+    public WebElement deleted;
+
 
 
 

@@ -2,6 +2,8 @@ package ui.stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -15,6 +17,9 @@ public class Us_2 {
 
 
     Us2 us2 =new Us2();
+
+    Logger log = (Logger) LogManager.getLogger(Us_2.class);
+
     @And("user hover over Sign in")
     public void userHoverOverSignIn() throws InterruptedException {
         Actions actions=new Actions(Driver.getDriver());
@@ -27,6 +32,9 @@ public class Us_2 {
     public void clicktSignIn() throws InterruptedException {
         Thread.sleep(1000);
         us2.signin.click();
+
+        log.info("sign in butonuna tıklandı");
+
     }
 
     @And("write valid e mail")
@@ -66,6 +74,7 @@ public class Us_2 {
     public void see_Error_Message() {
         Assert.assertTrue(Driver.getDriver().findElement(By.id("auth-error-message-box")).getText().contains("There was a problem"));
 
+        log.info("hata mesajı doğrulandı");
 
     }
 
@@ -74,6 +83,7 @@ public class Us_2 {
     public void write_invalid_e_mail() {
         Driver.getDriver().findElement(By.xpath("(//*[@id='ap_email'])[1]")).sendKeys("emag44455@alfaceti.com" ,  Keys.ENTER);
 
+        log.info("invalid email girildi");
 
     }
 

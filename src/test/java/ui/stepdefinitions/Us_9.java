@@ -2,6 +2,7 @@ package ui.stepdefinitions;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.When;
+import io.restassured.internal.common.assertion.AssertionSupport;
 import org.junit.Assert;
 import ui.pages.Us9;
 
@@ -22,6 +23,8 @@ public class Us_9 {
     public void userSeeSuccessMessage() throws InterruptedException {
         Thread.sleep(2000);
         Assert.assertTrue(us9.successMessage.isDisplayed());
+
+
     }
 
 
@@ -41,10 +44,15 @@ public class Us_9 {
     @When("User clickt Delete")
     public void user_clickt_Delete() {
 
+        us9.delete.click();
     }
 
     @When("user should see deleted message")
     public void user_should_see_deleted_message() {
+
+        Assert.assertTrue(us9.deleted.isDisplayed());
+
+
 
     }
 

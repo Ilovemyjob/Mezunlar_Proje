@@ -41,17 +41,13 @@ public class Us_4 {
 //        ) {
 //            actual.add(each.getText());
 //
-//
 //        }
-
         for (int i = 0; i <us4.searchedWord.size() ; i++) {
             actual.add(us4.searchedWord.get(i).getText());
 
             for (int j = 0; j <us4.searchedWord.size() ; i++) {
                 Assert.assertTrue(actual.get(i).contains(string));
-
             }
-
         }
         System.out.println(actual);
        // Assert.assertTrue(actual.contains(string));

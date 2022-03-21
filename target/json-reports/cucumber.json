@@ -1,22 +1,22 @@
 [
   {
-    "line": 2,
+    "line": 4,
     "elements": [
       {
-        "start_timestamp": "2022-02-22T21:22:58.645Z",
-        "line": 3,
-        "name": "user should be able to add and delete product in the shopping list",
+        "start_timestamp": "2022-03-15T23:26:24.315Z",
+        "line": 5,
+        "name": "User should reach to the Amazon web site",
         "description": "",
-        "id": "tc-9;user-should-be-able-to-add-and-delete-product-in-the-shopping-list",
+        "id": "us-1;user-should-reach-to-the-amazon-web-site",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 15000000,
-              "status": "skipped"
+              "duration": 15796000000,
+              "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "User go to Amazon site",
             "match": {
               "location": "ui.stepdefinitions.Us_1.userGoToAmazonSite()"
@@ -25,115 +25,57 @@
           },
           {
             "result": {
-              "duration": 15000000,
-              "status": "skipped"
-            },
-            "line": 5,
-            "name": "User hover over Account\u0026List",
-            "match": {
-              "location": "ui.stepdefinitions.Us_8.user_hover_over_Account_List()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 94000000,
-              "status": "skipped"
-            },
-            "line": 6,
-            "name": "User clickt Create a List",
-            "match": {
-              "location": "ui.stepdefinitions.Us_8.user_clickt_Create_a_List()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 32000000,
-              "status": "skipped"
+              "duration": 2459000000,
+              "status": "passed"
             },
             "line": 7,
-            "name": "User search Gift",
+            "name": "User can go to site",
             "match": {
-              "location": "ui.stepdefinitions.Us_9.user_search_Gift()"
+              "location": "ui.stepdefinitions.Us_1.userCanGoToSite()"
             },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 8,
-            "name": "User clickt one Product",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 9,
-            "name": "User clickt Add to lIst",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "User got More",
-            "match": {
-              "location": "ui.stepdefinitions.Us_8.user_got_More()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11,
-            "name": "usr should see procuct on Shopping List",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 12,
-            "name": "User clickt Delete",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 13,
-            "name": "user should see deleted message",
-            "match": {},
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@9"
+            "name": "@1"
+          },
+          {
+            "name": "@Parallel1"
+          },
+          {
+            "name": "@Parallel2"
           }
         ]
       }
     ],
-    "name": "tc_9",
+    "name": "Us_1",
     "description": "",
-    "id": "tc-9",
+    "id": "us-1",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/Us_9.feature",
+    "uri": "file:src/test/resources/uiFeatures/Us_1.feature",
     "tags": [
       {
-        "name": "@9",
+        "name": "@1",
         "type": "Tag",
         "location": {
           "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel1",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@Parallel2",
+        "type": "Tag",
+        "location": {
+          "line": 3,
           "column": 1
         }
       }

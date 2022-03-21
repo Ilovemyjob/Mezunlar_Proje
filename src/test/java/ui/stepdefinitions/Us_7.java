@@ -46,7 +46,7 @@ public class Us_7 {
 
         for (int i = 0; i < us7.buttomDynamic.size(); i++) {
 
-            if (string.contains(Driver.getDriver().getTitle())) {
+            if (string.equals(Driver.getDriver().getTitle())) {
                 Assert.assertTrue(true);
 
             }

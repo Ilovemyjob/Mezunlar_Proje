@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="25.343">
+<testcase classname="Us_1" name="User should reach to the Amazon web site" time="22.85">
+<system-out><![CDATA[When User go to Amazon site.................................................passed
+And User can go to site.....................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
